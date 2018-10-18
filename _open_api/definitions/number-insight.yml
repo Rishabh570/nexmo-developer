@@ -404,6 +404,7 @@ components:
         roaming:
           type: object       
           description: 'Information about the roaming status for number. This is applicable to mobile numbers only.'
+          x-nexmo-developer-collection-description-shown: true
           properties:
             status:
               type: string
@@ -414,6 +415,7 @@ components:
                 attribute: true
         caller_identity:
           type: object
+          x-nexmo-developer-collection-description-shown: true
           description: 'Contains details of the number owner, if `cnam` was set to `true` in the request.'
           properties:
             caller-type:
@@ -489,6 +491,7 @@ components:
           example: "447700900000"
         local_number:
           type: object
+          x-nexmo-developer-collection-description-shown: true
           description: "An object containing the `number` in your request in the format used by the country the number belongs to."
           properties:
             country_code:
@@ -525,6 +528,7 @@ components:
                 x-text: true # see https://github.com/OAI/OpenAPI-Specification/issues/630
         error:
           type: object
+          x-nexmo-developer-collection-description-shown: true
           description: 'The error code and status of your request'
           properties:
             code:
@@ -549,11 +553,13 @@ components:
           example: '1.23456789'
         current_carrier:
           type: object
+          x-nexmo-developer-collection-description-shown: true
           description: 'Information about the network `number` is currently connected to.'
           properties:
             $ref: '#/components/schemas/niCarrierProperties'
         original_carrier:
           type: object
+          x-nexmo-developer-collection-description-shown: true
           description: 'Information about the network `number` was initially connected to.'
           properties:
             $ref: '#/components/schemas/niCarrierProperties'
@@ -630,6 +636,7 @@ components:
           example: 'consumer'
         lookup_outcome:
           type: object
+          x-nexmo-developer-collection-description-shown: true
           description: "An object indicating whether all information about a phone number has been returned."
           properties:
             code:
@@ -782,11 +789,13 @@ components:
           example: '1.23456789'
         current_carrier:
           type: object
+          x-nexmo-developer-collection-description-shown: true
           description: 'Information about the network `number` is currently connected to.'
           properties:
             $ref: '#/components/schemas/niCarrierProperties'
         original_carrier:
           type: object
+          x-nexmo-developer-collection-description-shown: true
           description: 'Information about the network `number` was initially connected to.'
           properties:
             $ref: '#/components/schemas/niCarrierProperties'
@@ -880,11 +889,13 @@ components:
           example: '1.23456789'
         current_carrier:
           type: object
+          x-nexmo-developer-collection-description-shown: true
           description: 'Information about the network `number` is currently connected to.'
           properties:
             $ref: '#/components/schemas/niCarrierProperties'
         original_carrier:
           type: object
+          x-nexmo-developer-collection-description-shown: true
           description: 'Information about the network `number` was initially connected to.'
           properties:
             $ref: '#/components/schemas/niCarrierProperties'
