@@ -10,11 +10,7 @@
 
     <div id="<%= id %>" class="collapsible-content collapsible-no-indent" style="display: none;">
       <% response.formats.each_with_index do |format, index| %>
-        <% if response.formats.count > 1 %>
-          <h4>Response Fields: <%= format %></h4>
-        <% else %>
-          <h4>Response Fields</h4>
-        <% end %>
+        <div class="js-format" data-format="<%= format %>">
         <ul class="table-list">
             <li class="table-list-header">
                 <div class="table-list-columns">
@@ -58,6 +54,7 @@
                 <% end %>
 
         </ul>
+        </div>
       <% end %>
     </div>
 
