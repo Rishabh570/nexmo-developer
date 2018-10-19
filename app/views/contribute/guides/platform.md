@@ -59,7 +59,7 @@ Document | Description
 >
 > §
 >
-> Although this specific issue hasn't been addressed some work has been made towards having a tree based overides, this could allow an individual item to be overridden by specifying it's location within the document hirearchy. You can see the start of this work under `navigation_overrides` within the `/config/navigation.yml` file.
+> Although this specific issue hasn't been addressed some work has been made towards having a tree based overrides, this could allow an individual item to be overridden by specifying it's location within the document hirearchy. You can see the start of this work under `navigation_overrides` within the `/config/navigation.yml` file.
 
 ## Pages and content
 
@@ -166,7 +166,7 @@ ExternalLink | No | [Implicit] | Automatically adds an icon and `target="blank"`
 
 ## Webpack
 
-We use [Webpacker](https://github.com/rails/webpacker) to handle JavaScript in webpack with Ruby on Rails. We use the React intergration with this tool.
+We use [Webpacker](https://github.com/rails/webpacker) to handle JavaScript in webpack with Ruby on Rails. We use the React integration with this tool.
 
 The JavaScript file that is loaded can be found at `/app/javascript/packs/application.js`.
 
@@ -193,7 +193,7 @@ Notices can be added site-wide or on specific routes. Here are examples of imple
 ```yaml
 some-unique-id:
   content: |-
-    <h2>Welcome to Nexmo Developer</h2>
+    <h4>Welcome to Nexmo Developer</h4>
     <p>We are improving our Documentation, API references, learning resources & tooling to help you more effectively use our services. We want to help you find everything you need to integrate Nexmo APIs into your code.</p>
     <p>As we start this transition, we’d love to hear from you with thoughts & suggestions. If you’ve got something, positive or negative, to tell us, please tell us using the feedback tool at the bottom of each guide or <a href="https://github.com/Nexmo/nexmo-developer/issues/new">file an issue</a> on GitHub. - Nexmo</p>
 ```
@@ -205,7 +205,7 @@ another-inique-id:
   dismissible: false
   path: '^\/(api\/)?new-product'
   content: |-
-    <h2>Welcome to the Developer Preview for New Product</h2>
+    <h4>Welcome to the Developer Preview for New Product</h4>
     <p>If you are interested in participating, have any questions, or feedback you can email us at <a href="mailto:new-product-support@nexmo.com">ea-support@nexmo.com</a>.</p>
 ```
 
